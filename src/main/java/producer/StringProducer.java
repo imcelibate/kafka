@@ -14,7 +14,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 public class StringProducer {
 	
-	private final static String TOPIC = "my-example-topic";
+	private static String TOPIC = "AMMA";
     private final static String BOOTSTRAP_SERVERS =
             "localhost:9090,localhost:9091,localhost:9092";
     private static Scanner in = new Scanner(System.in);
@@ -60,16 +60,16 @@ public class StringProducer {
 	}
 	
 	 public static void main(String[] args)throws Exception {
-		 String topicName = "AMMA";
+		
 		 if (args.length != 1) {
-		 System.err.println("As TOPIC is not specified , sending message to default TOPIC \"AMMA\"");
-		 System.err.println("To send to a particular TOPIC metion it as a Program Argument");		 		 
+		 System.out.println("As TOPIC is not specified , sending message to default TOPIC \"AMMA\"");
+		 System.out.println("To send to a particular TOPIC metion it as a Program Argument");		 		 
 		 }else {
-			 topicName = args[0];
+			 TOPIC = args[0];
 		 }
 		 
 		 System.out.println("Enter message(type exit to quit)");	
-		 sendMessage(topicName);
+		 sendMessage(TOPIC);
 
   }
 	 
