@@ -1,2 +1,3 @@
 # kafka
-Do Kafka installation in a Ubuntu machine using https://docs.google.com/document/d/1g_JHTrLpLR3sKiWLiti8jxc_pIrZOzzJWPKBXDbwUsw/edit
+Do Kafka installation in a Ubuntu machine using 
+Google doc > tech > kafka > Kafka_Installation_12Apr2020
