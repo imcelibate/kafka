@@ -1,0 +1,27 @@
+{
+	"type": "record",
+	"name": "PageViewEvent",
+	"namespace": "com.mykidong.domain.event.schema",
+	"fields": [{
+			"name": "ashramID",
+			"type": [
+				"null",
+				"string"
+			]
+		},
+		{
+			"name": "ashramName",
+			"type": [
+				"null",
+				"string"
+			]
+		},
+		{
+			"name": "location",
+			"type": [
+				"null",
+				"int"
+			]
+		}
+	]
+}

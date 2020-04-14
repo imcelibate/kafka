@@ -14,6 +14,9 @@ cd /usr/local
 sudo kafka/bin/kafka-server-start.sh kafka/config/server2.properties
 
 cd /usr/local
+sudo kafka/bin/schema-registry-start /usr/local/etc/schema-registry/schema-registry.properties
+
+cd /usr/local
 kafka/bin/kafka-topics.sh --create \
   --zookeeper localhost:2181 \
   --replication-factor 1 --partitions 13 \
