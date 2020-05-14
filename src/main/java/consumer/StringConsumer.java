@@ -16,7 +16,7 @@ public class StringConsumer {
 	
 	private static String TOPIC = "AMMA";
     private final static String BOOTSTRAP_SERVERS =
-            "localhost:9090,localhost:9091,localhost:9092";
+            "localhost:19090,localhost:19091,localhost:19092";
     
     private static Consumer<Long, String> createConsumer() {
         final Properties props = new Properties();

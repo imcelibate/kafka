@@ -16,7 +16,7 @@ public class StringProducer {
 	
 	private static String TOPIC = "AMMA";
     private final static String BOOTSTRAP_SERVERS =
-            "localhost:9090,localhost:9091,localhost:9092";
+            "localhost:19090,localhost:19091,localhost:19092";
     private static Scanner in = new Scanner(System.in);
 	
 	private static Producer<Long, String> createProducer() {
