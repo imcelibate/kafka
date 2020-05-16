@@ -1,5 +1,11 @@
-# Default ignored files
-/shelf/
-/.idea/workspace.xml
-*Maven_*.xml
-kafka.iml
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+~/*.iml
+*.xml
+out
+gen
+target/generated-sources/
