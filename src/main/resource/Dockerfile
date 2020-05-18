@@ -21,7 +21,7 @@ WORKDIR /tmp
 #ENV fullClassName=producer.testDocker
 ARG fullClassName=producer.testDocker
 ENV fullClassName=$fullClassName
-CMD java -cp kafka-0.0.1-SNAPSHOT.jar $fullClassName
+ENTRYPOINT java -cp kafka-0.0.1-SNAPSHOT.jar $fullClassName
 
 
 
