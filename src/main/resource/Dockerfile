@@ -14,14 +14,14 @@
 ##	--running with runtime arg
 #	docker run --rm -e fullClassName=producer.testDocker testjava
 FROM openjdk:8
-COPY kafka-0.0.1-SNAPSHOT.jar /tmp
+COPY kafka-pub-sub-jar-with-dependencies.jar /tmp
 WORKDIR /tmp
 #ENTRYPOINT ["java","producer.testDocker"]
 #CMD java -cp kafka-0.0.1-SNAPSHOT.jar producer.testDocker
 #ENV fullClassName=producer.testDocker
 ARG fullClassName=producer.testDocker
 ENV fullClassName=$fullClassName
-ENTRYPOINT java -cp kafka-0.0.1-SNAPSHOT.jar $fullClassName
+ENTRYPOINT java -cp kafka-pub-sub-jar-with-dependencies.jar $fullClassName
 
 
 

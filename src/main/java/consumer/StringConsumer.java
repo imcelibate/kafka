@@ -16,7 +16,8 @@ public class StringConsumer {
 	
 	private static String TOPIC = "AMMA";
     private final static String BOOTSTRAP_SERVERS =
-            "localhost:19090,localhost:19091,localhost:19092";
+            //"localhost:19090,localhost:19091,localhost:19092";
+            "kafka-1:19090,kafka-2:19091,kafka-3:19092";//Use this if cluster created using docker
     
     private static Consumer<Long, String> createConsumer() {
         final Properties props = new Properties();
