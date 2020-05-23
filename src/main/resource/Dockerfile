@@ -1,18 +1,18 @@
 #cd /home/iasoa_dell/AMMA/tutorial/kafka/target
 
 ##--Without buildtime argument
-#docker build -t testjava:latest -f /home/iasoa_dell/AMMA/tutorial/kafka/src/main/resource/Dockerfile .
+#docker build -t kafka-pub-sub:latest -f /home/iasoa_dell/AMMA/tutorial/kafka/src/main/resource/Dockerfile .
 ##	--running without runtime arg
-#	docker run testjava
+#	docker run kafka-pub-sub
 ##	--running with runtime arg
-#	docker run --rm -e fullClassName=producer.StringProducer testjava
+#	docker run --rm -e fullClassName=producer.StringProducer kafka-pub-sub
 #
 ##--With buildtime argument
-#docker build -t testjava:latest --build-arg fullClassName=producer.StringProducer -f /home/iasoa_dell/AMMA/tutorial/kafka/src/main/resource/Dockerfile .
+#docker build -t kafka-pub-sub:latest --build-arg fullClassName=producer.StringProducer -f /home/iasoa_dell/AMMA/tutorial/kafka/src/main/resource/Dockerfile .
 ##	--running without runtime arg
-#	docker run testjava
+#	docker run kafka-pub-sub
 ##	--running with runtime arg
-#	docker run --rm -e fullClassName=producer.testDocker testjava
+#	docker run --rm -e fullClassName=producer.testDocker kafka-pub-sub
 FROM openjdk:8
 COPY kafka-pub-sub-jar-with-dependencies.jar /tmp
 WORKDIR /tmp
